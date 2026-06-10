@@ -76,16 +76,19 @@ For each case:
 
 ### Dice Similarity Coefficient (DSC)
 
-Dice Score = (2 × Intersection of Prediction and Ground Truth) / (Number of Predicted Pixels + Number of Ground Truth Pixels)
+The Dice Similarity Coefficient (DSC) is used to measure the overlap between the predicted lesion mask and the ground-truth annotation.
 
-\[
-\text{Dice} = \frac{2|A \cap B|}{|A| + |B|}
-\]
+**Formula:**
+
+Dice Score = 2 × (Predicted Mask ∩ Ground Truth Mask) / (Predicted Mask + Ground Truth Mask)
 
 where:
 
 - **A** = Predicted lesion mask
 - **B** = Ground-truth lesion mask
+- **A ∩ B** = Common pixels shared by both masks
+
+A Dice score of **1.0** indicates perfect overlap, while a score of **0.0** indicates no overlap.
 
 ### 5. Visualization
 
