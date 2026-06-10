@@ -1,4 +1,4 @@
-# DeepLesion Lesion Segmentation using MedSAM2
+# # 3D Lesion Segmentation and Evaluation on the DeepLesion Dataset using MedSAM2
 
 ## Overview
 
