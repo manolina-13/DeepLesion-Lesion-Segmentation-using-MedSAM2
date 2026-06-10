@@ -74,14 +74,18 @@ For each case:
 - Compare the predicted mask with the annotation.
 - Compute the Dice Similarity Coefficient (DSC):
 
+### Dice Similarity Coefficient (DSC)
+
+Dice Score = (2 × Intersection of Prediction and Ground Truth) / (Number of Predicted Pixels + Number of Ground Truth Pixels)
+
 \[
-Dice = \frac{2|A \cap B|}{|A| + |B|}
+\text{Dice} = \frac{2|A \cap B|}{|A| + |B|}
 \]
 
 where:
 
-- A = Predicted mask
-- B = Ground-truth mask
+- **A** = Predicted lesion mask
+- **B** = Ground-truth lesion mask
 
 ### 5. Visualization
 
